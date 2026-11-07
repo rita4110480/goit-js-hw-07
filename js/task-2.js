@@ -28,12 +28,12 @@ const images = [
 
 const markup = images.map((image) => {
     const li = document.createElement("li");
-    li.classList.add("list-item");
+   //li.classList.add("list-item");
 
     li.innerHTML = `
     <li class = "list-item">
-    <img src= "${image.url}" alt= "${image.alt}">
-    `;
+    <img src= "${image.url}" alt= "${image.alt}" />
+   </li> `;
 
     return li;
 });
